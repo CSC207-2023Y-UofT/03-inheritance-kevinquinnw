@@ -38,7 +38,7 @@ class BagMain {
         int strapCount = 0;
         for (Bag item: bags) {
             if (item instanceof CrossbodyBag) {
-                strapCount += (CrossbodyBag(item).getNumberOfStraps());
+                strapCount += ((CrossbodyBag) item).getNumberOfStraps();
             }
         }
         return strapCount;

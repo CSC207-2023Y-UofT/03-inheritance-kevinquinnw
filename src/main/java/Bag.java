@@ -5,6 +5,7 @@
  * 1. Introduction to Java helpful.
  */
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public abstract class Bag {
@@ -66,7 +67,7 @@ public abstract class Bag {
      *       color of this bag to the given color.
      */
 
-     public void setColor (string color) {
+     public void setColor (String color) {
         this.color = color;
      }
 
@@ -82,7 +83,7 @@ public abstract class Bag {
      *       and false otherwise.
      */
 
-     public boolean addItem (string item) {
+     public boolean addItem (String item) {
         if (this.numberOfContents < this.capacity) {
             this.contents[this.numberOfContents] = item;
             this.numberOfContents++;
@@ -104,7 +105,7 @@ public abstract class Bag {
      * @return
      */
 
-     public string popItem () {
+     public String popItem () {
         if (this.numberOfContents == 0) {
             return null;
         } else {
