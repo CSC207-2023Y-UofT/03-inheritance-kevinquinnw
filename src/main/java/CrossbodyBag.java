@@ -50,7 +50,7 @@
 
     @Override
     public String toString () {
-        return getColor() + " Crossbody Bag with " + getNumberOfStraps() + "straps" + "(" + getNumberOfContents() + " / " + getCapacity() + ")";
+        return getColor() + " Crossbody Bag with " + getNumberOfStraps() + " straps " + "(" + getNumberOfContents() + " / " + getCapacity() + ")";
     }
 
 
